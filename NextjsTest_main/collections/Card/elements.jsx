@@ -8,7 +8,7 @@ import {
    SectionParagraph_2,
    SectionParagraph_3,
    SectionTitleOneParagraph_,
-  } from "~/components";
+  } from "../../components";
 
 export const StyledContainerCard = styled(({ height, ...props }) => <SectionContainerCard {...props} />)`
   align-items: center;
