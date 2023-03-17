@@ -1,4 +1,5 @@
 import { Hero } from "../sections";
+import { Card } from "../collections";
 
 const heroProps = {
   image: { src: "/img/heroimg.png", alt: "", width: 1000, height: 1680 },
@@ -6,6 +7,17 @@ const heroProps = {
   description: "Start the process here",
   ctaText: "Start",
 };
+
+const cardProps ={
+  image:{ src: "/img/video.png", alt: "", width: 400, height: 400 },
+  logo1:{ src: "/img/brife.png", alt: "", width: 40, height: 40 },
+  logo2:{ src: "/img/pearson.png", alt: "", width: 40, height: 40 },
+  logo3:{ src: "/img/people_at_table.png", alt: "", width: 40, height: 40 },
+  titleBrief:"Brief",
+  title: "Managed agency selection",
+  description: "Stengthen your onboarding process",
+  descriptions: ""
+}
 
 export default function Home() {
   return (
@@ -20,7 +32,7 @@ export default function Home() {
       </head>
       <div>
         <Hero {...heroProps} />
-        {/** Other sections */}
+        <Card {...cardProps}/>
       </div>
     </>
   );
